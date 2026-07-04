@@ -1,0 +1,197 @@
+.footer {
+  background: var(--black);
+  color: var(--grey-200);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr 1.2fr;
+  gap: 64px;
+  padding: 100px 32px 72px;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Slightly wider gap */
+  transition: opacity 0.3s ease;
+}
+
+.brand:hover {
+  opacity: 0.85;
+}
+
+.logo {
+  height: 44px;
+  width: auto;
+  filter: invert(1);
+}
+
+.brandName {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.brandSlogan {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  margin-top: 6px;
+}
+
+.desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--grey-400);
+  max-width: 340px;
+}
+
+.colTitle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.col ul li a {
+  display: inline-block;
+  font-size: 15px;
+  color: var(--grey-400);
+  transition: all 0.3s ease;
+}
+
+.col ul li a:hover {
+  color: var(--white);
+  transform: translateX(5px); 
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 15px;
+  color: var(--grey-400);
+  line-height: 1.6;
+}
+
+.contactList svg {
+  margin-top: 4px;
+  flex-shrink: 0;
+  color: var(--grey-400);
+  transition: color 0.3s ease;
+}
+
+.contactList li a {
+  color: var(--grey-400);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.contactList li:hover a,
+.contactList li:hover svg {
+  color: var(--white);
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 28px;
+  padding: 12px 24px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-2px);
+}
+
+.mapLink {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--grey-400);
+  border-bottom: 1px solid var(--grey-600);
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.mapLink:hover {
+  color: var(--white);
+  border-color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 32px;
+  font-size: 14px;
+  color: var(--grey-600);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.craft {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    gap: 48px;
+    padding: 80px 32px 64px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 72px 24px 56px;
+    gap: 56px 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  
+  .bottomInner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+}

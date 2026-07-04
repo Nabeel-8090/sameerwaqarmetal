@@ -1,0 +1,124 @@
+.hero {
+  background: var(--grey-50);
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.heroInner {
+  padding: 100px 32px 80px;
+  max-width: 820px;
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 800;
+  margin-top: 18px;
+}
+
+.lead {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--grey-600);
+  margin-top: 26px;
+  max-width: 700px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.valueCard {
+  padding: 30px 0 0;
+  border-top: 2px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.valueCard h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.valueCard p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--grey-600);
+}
+
+.processSection {
+  background: var(--black);
+  color: var(--white);
+}
+
+.processSection .eyebrow {
+  color: var(--grey-400);
+}
+
+.processSection .eyebrow::before {
+  background: var(--white);
+}
+
+.processSection .section-heading {
+  color: var(--white);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 54px;
+}
+
+.processCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.processStep {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--grey-600);
+  letter-spacing: 0.08em;
+}
+
+.processCard h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.processCard p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--grey-400);
+}
+
+.processLine {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .processLine {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    width: 30px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+  }
+}
+
+@media (max-width: 900px) {
+  .valuesGrid { grid-template-columns: repeat(2, 1fr); }
+  .processGrid { grid-template-columns: repeat(2, 1fr); gap: 40px 30px; }
+}
+
+@media (max-width: 560px) {
+  .valuesGrid { grid-template-columns: 1fr; }
+  .processGrid { grid-template-columns: 1fr; }
+}

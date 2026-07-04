@@ -1,0 +1,64 @@
+.hero {
+  background: var(--grey-50);
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.heroInner {
+  padding: 100px 32px 80px;
+  max-width: 800px;
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 800;
+  margin-top: 18px;
+}
+
+.lead {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--grey-600);
+  margin-top: 24px;
+  max-width: 680px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 30px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.row:first-child {
+  border-top: 1px solid var(--grey-200);
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--grey-600);
+  padding-top: 4px;
+}
+
+.rowBody h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.rowBody p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--grey-600);
+  margin-top: 10px;
+  max-width: 620px;
+}
+
+@media (max-width: 640px) {
+  .row { grid-template-columns: 1fr; gap: 10px; }
+}
