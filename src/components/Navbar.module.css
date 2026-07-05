@@ -46,6 +46,7 @@
   font-size: 16px;
   letter-spacing: 0.01em;
   color: var(--black);
+  white-space: nowrap;
 }
 
 .brandSlogan {
@@ -55,6 +56,7 @@
   text-transform: uppercase;
   color: var(--grey-600);
   margin-top: 3px;
+  white-space: nowrap;
 }
 
 .desktopNav {
@@ -171,4 +173,15 @@
   .brandSlogan { font-size: 9px; letter-spacing: 0.24em; }
   .logo { height: 34px; }
   .brand { gap: 10px; }
+}
+
+@media (max-width: 480px) {
+  .brandName { font-size: 14.5px; }
+  .brandSlogan { font-size: 8.5px; letter-spacing: 0.18em; }
+  .logo { height: 38px; }
+  .brand { gap: 10px; }
+}
+
+@media (max-width: 360px) {
+  .brandSlogan { display: none; }
 }

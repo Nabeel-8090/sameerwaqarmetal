@@ -4,8 +4,8 @@
   color: var(--white);
   position: relative;
   background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -57,7 +57,7 @@
 
 .heroActions .btn-outline {
   color: var(--white);
-  border-color: rgba(255,255,255,0.4);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .heroActions .btn-outline:hover {
@@ -67,7 +67,7 @@
 }
 
 .heroMeta {
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
 }
 
@@ -80,6 +80,11 @@
   letter-spacing: 0.08em;
   color: var(--grey-600);
   overflow-x: auto;
+  white-space: nowrap;
+}
+
+.heroMetaInner span {
+  flex-shrink: 0;
 }
 
 /* About teaser */
@@ -233,59 +238,82 @@
   font-size: 12.5px;
   font-weight: 600;
   color: var(--white);
-  background: linear-gradient(transparent, rgba(17,17,17,0.75));
-}
-
-/* CTA */
-.cta {
-  background: var(--black);
-  color: var(--white);
-}
-
-.ctaInner {
-  padding: 100px 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-}
-
-.ctaInner h2 {
-  font-size: clamp(26px, 4vw, 38px);
-  font-weight: 700;
-}
-
-.ctaInner p {
-  color: var(--grey-400);
-  max-width: 460px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.ctaInner .btn {
-  margin-top: 10px;
+  background: linear-gradient(transparent, rgba(17, 17, 17, 0.75));
 }
 
 @media (max-width: 1000px) {
-  .aboutGrid { grid-template-columns: 1fr; gap: 48px; }
-  .productGrid { grid-template-columns: repeat(2, 1fr); }
-  .whyGrid { grid-template-columns: repeat(2, 1fr); }
-  .galleryGrid { grid-template-columns: repeat(3, 1fr); }
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 640px) {
-  .heroInner { padding: 100px 20px 64px; }
-  .heroActions { gap: 12px; }
-  .heroActions .btn { width: 100%; }
-  .heroMetaInner { gap: 24px; padding: 16px 20px; }
-  .aboutStats { grid-template-columns: 1fr; }
-  .stat:first-child { grid-column: auto; }
-  .productGrid { grid-template-columns: 1fr; }
-  .whyGrid { grid-template-columns: 1fr; }
-  .whyCard { padding: 32px 26px; }
-  .galleryGrid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  .sectionHead { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .ctaInner { padding: 64px 20px; }
-  .ctaInner .btn { width: 100%; }
+  .heroInner {
+    padding: 100px 20px 64px;
+  }
+
+  .heroActions {
+    gap: 12px;
+  }
+
+  .heroActions .btn {
+    width: 100%;
+  }
+
+  .heroMetaInner {
+    gap: 24px;
+    padding: 16px 20px;
+  }
+
+  .aboutStats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat:first-child {
+    grid-column: auto;
+  }
+
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .whyCard {
+    padding: 32px 26px;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .sectionHead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .ctaInner {
+    padding: 64px 20px;
+  }
+
+  .ctaInner .btn {
+    width: 100%;
+  }
 }
