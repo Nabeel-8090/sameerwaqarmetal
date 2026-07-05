@@ -19,8 +19,8 @@
 .top {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  padding: 40px 32px 90px;
+  gap: 72px;
+  padding: 48px 32px 100px;
 }
 
 .mainImage {
@@ -56,8 +56,8 @@
 }
 
 .features {
-  margin-top: 34px;
-  padding-top: 28px;
+  margin-top: 40px;
+  padding-top: 32px;
   border-top: 1px solid var(--grey-200);
 }
 
@@ -67,13 +67,13 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--grey-600);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .features ul {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .features li {
@@ -121,9 +121,9 @@
 
 .specCard {
   background: var(--white);
-  padding: 24px 26px;
+  padding: 30px 32px;
   display: flex;
-  gap: 16px;
+  gap: 18px;
   align-items: flex-start;
 }
 
@@ -156,7 +156,7 @@
 }
 
 .ctaInner {
-  padding: 56px 32px;
+  padding: 64px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -178,12 +178,12 @@
 .relatedGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 40px;
+  gap: 32px;
+  margin-top: 48px;
 }
 
 @media (max-width: 900px) {
-  .top { grid-template-columns: 1fr; gap: 36px; padding: 30px 20px 70px; }
+  .top { grid-template-columns: 1fr; gap: 40px; padding: 32px 20px 70px; }
   .specsGrid { grid-template-columns: 1fr; }
   .specsSection { padding: 0 20px 70px; }
   .relatedGrid { grid-template-columns: repeat(2, 1fr); }
@@ -191,5 +191,7 @@
 
 @media (max-width: 560px) {
   .relatedGrid { grid-template-columns: 1fr; }
-  .ctaInner { flex-direction: column; align-items: flex-start; }
+  .ctaInner { flex-direction: column; align-items: flex-start; padding: 44px 20px; }
+  .orderBtn { width: 100%; }
+  .breadcrumb { padding: 20px 20px 0; flex-wrap: wrap; }
 }

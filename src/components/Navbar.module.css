@@ -23,7 +23,7 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   min-width: 0;
 }
 
@@ -97,7 +97,7 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
 }
 
 .whatsappBtn {
@@ -154,14 +154,21 @@
     display: flex;
   }
   .mobileNavOpen {
-    max-height: 420px;
-    padding: 12px 20px 20px;
+    max-height: 460px;
+    padding: 12px 20px 24px;
     border-top-color: var(--grey-200);
   }
   .inner {
     height: 72px;
   }
   .logo {
-    height: 36px;
+    height: 40px;
   }
+}
+
+@media (max-width: 380px) {
+  .brandName { font-size: 14.5px; }
+  .brandSlogan { font-size: 9px; letter-spacing: 0.24em; }
+  .logo { height: 34px; }
+  .brand { gap: 10px; }
 }

@@ -30,8 +30,8 @@
 .row {
   display: grid;
   grid-template-columns: 100px 1fr;
-  gap: 30px;
-  padding: 36px 0;
+  gap: 36px;
+  padding: 44px 0;
   border-bottom: 1px solid var(--grey-200);
 }
 
@@ -53,12 +53,43 @@
 
 .rowBody p {
   font-size: 15px;
-  line-height: 1.75;
+  line-height: 1.8;
   color: var(--grey-600);
-  margin-top: 10px;
+  margin-top: 12px;
   max-width: 620px;
 }
 
+.cta {
+  background: var(--grey-50);
+  border-top: 1px solid var(--grey-200);
+}
+
+.ctaInner {
+  padding: 100px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ctaInner h2 {
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 700;
+}
+
+.ctaInner p {
+  color: var(--grey-600);
+  max-width: 460px;
+  font-size: 16px;
+}
+
+.ctaInner .btn {
+  margin-top: 8px;
+}
+
 @media (max-width: 640px) {
-  .row { grid-template-columns: 1fr; gap: 10px; }
+  .row { grid-template-columns: 1fr; gap: 14px; padding: 36px 0; }
+  .heroInner { padding: 70px 20px 56px; }
+  .ctaInner { padding: 70px 20px; }
 }

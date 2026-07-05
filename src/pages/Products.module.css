@@ -3,9 +3,9 @@
 }
 
 .header {
-  padding-bottom: 50px;
+  padding-bottom: 56px;
   border-bottom: 1px solid var(--grey-200);
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   max-width: 700px;
 }
 
@@ -25,7 +25,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 32px;
 }
 
 @media (max-width: 1000px) {
@@ -33,6 +33,7 @@
 }
 
 @media (max-width: 640px) {
-  .grid { grid-template-columns: 1fr; }
-  .page { padding: 40px 0 80px; }
+  .grid { grid-template-columns: 1fr; gap: 24px; }
+  .page { padding: 44px 0 72px; }
+  .header { padding-bottom: 40px; margin-bottom: 40px; }
 }

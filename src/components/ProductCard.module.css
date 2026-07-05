@@ -32,10 +32,10 @@
 }
 
 .body {
-  padding: 22px 22px 24px;
+  padding: 28px 26px 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 .titleRow {
@@ -70,11 +70,11 @@
 }
 
 .viewDetails {
-  margin-top: 6px;
+  margin-top: 8px;
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding-top: 14px;
+  padding-top: 18px;
   border-top: 1px solid var(--grey-100);
 }
