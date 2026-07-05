@@ -90,18 +90,6 @@ export default function ProductDetails() {
         </div>
       </section>
 
-      <section className={styles.ctaBand}>
-        <div className={`container ${styles.ctaInner}`}>
-          <div>
-            <h3>Ready to order this piece?</h3>
-            <p>Send us your size and finish preference — we'll confirm price and timeline on WhatsApp.</p>
-          </div>
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-light">
-            <MessageCircle size={17} /> Order on WhatsApp
-          </a>
-        </div>
-      </section>
-
       {related.length > 0 && (
         <section className={`container section section--tight`}>
           <span className="eyebrow">You May Also Like</span>
