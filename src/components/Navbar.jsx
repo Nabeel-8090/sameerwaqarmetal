@@ -35,7 +35,10 @@ export default function Navbar() {
         <Link to="/" className={styles.brand}>
           <img src={logo} alt="Sameer Waqar Metal Creation logo" className={styles.logo} />
           <span className={styles.brandText}>
-            <span className={styles.brandName}>SAMEER WAQAR</span>
+            <span className={styles.brandName}>
+              <span className={styles.brandWord}>SAMEER</span>
+              <span className={styles.brandWord}>WAQAR</span>
+            </span>
             <span className={styles.brandSlogan}>Metal Creation</span>
           </span>
         </Link>
