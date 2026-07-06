@@ -122,26 +122,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Gallery */}
-      <section className={`section section--tight ${styles.gallerySection}`}>
-        <div className="container">
-          <span className="eyebrow">Gallery</span>
-          <h2 className="section-heading">A closer look at our work</h2>
-          <div className={styles.galleryGrid}>
-            {galleryItems.map((item) => (
-              <Link to={`/products/${item.id}`} key={item.id} className={styles.galleryItem}>
-                {item.image ? (
-                  <img src={item.image} alt={item.name} />
-                ) : (
-                  <ProductBlueprint type={item.blueprint} />
-                )}
-                <span className={styles.galleryLabel}>{item.name}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   )
 }

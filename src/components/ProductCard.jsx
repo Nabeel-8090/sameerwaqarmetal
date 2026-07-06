@@ -4,11 +4,13 @@ import ProductBlueprint from './ProductBlueprint'
 import styles from './ProductCard.module.css'
 
 export default function ProductCard({ product }) {
+  const thumbnail = product.images && product.images.length > 0 ? product.images[0] : null
+
   return (
     <Link to={`/products/${product.id}`} className={styles.card}>
       <div className={styles.imageWrap}>
-        {product.image ? (
-          <img src={product.image} alt={product.name} className={styles.image} />
+        {thumbnail ? (
+          <img src={thumbnail} alt={product.name} className={styles.image} />
         ) : (
           <ProductBlueprint type={product.blueprint} className={styles.image} />
         )}
