@@ -65,7 +65,7 @@ export const products = [
   {
     id: 'jaffri',
     name: 'Jaffri',
-    blueprint: 'jaffri',
+
     images: [jaffri1, jaffri2, jaffri3, jaffri4, jaffri5],
     shortDescription: 'Hand-cut decorative lattice screens for windows, partitions and facades.',
     description:
@@ -85,7 +85,7 @@ export const products = [
   {
     id: 'wall-clock',
     name: 'Wall Clock',
-    blueprint: 'clock',
+
     images: [wallclock1, tableclock2, wallclock3, wallclock4, wallclock5],
     shortDescription: 'Minimal industrial wall clocks cut from solid sheet metal.',
     description:
@@ -105,7 +105,7 @@ export const products = [
   {
     id: 'keychain-holder',
     name: 'Key Chain Holder',
-    blueprint: 'keychain',
+
     images: [keychainholder1, keychainholder2, keychainholder3, keychainholder4, keychainholder5],
     shortDescription: 'Wall-mounted key organizers built for daily use.',
     description:
@@ -125,7 +125,7 @@ export const products = [
   {
     id: 'fruit-basket',
     name: 'Fruit Basket',
-    blueprint: 'basket',
+
     images: [fruitbasket1, fruitbasket2, fruitbasket3],
     shortDescription: 'Woven-wire fruit baskets for the kitchen table or counter.',
     description:
@@ -145,7 +145,7 @@ export const products = [
   {
     id: 'mobile-holder',
     name: 'Mobile Holder',
-    blueprint: 'mobileholder',
+
     images: [mobileholder1, mobileholder2, mobileholder3, mobileholder4],
     shortDescription: 'Compact metal stands for desks and workstations.',
     description:
@@ -165,7 +165,7 @@ export const products = [
   {
     id: 'bbq-grill',
     name: 'BBQ Grill',
-    blueprint: 'grill',
+
     images: [bbqgrill1, bbqgrill2, bbqgrill3, bbqgrill4, bbqgrill5],
     shortDescription: 'Heavy-duty outdoor grills built for high heat and daily use.',
     description:
@@ -185,7 +185,7 @@ export const products = [
   {
     id: 'custom-metal-designs',
     name: 'Custom Metal Designs',
-    blueprint: 'custom',
+
     images: [custom1, custom2, custom3, custom4, custom5, custom6, custom7, custom8, custom9, custom10, custom11],
     shortDescription: 'Bespoke metal fabrication built to your exact drawings or ideas.',
     description:
@@ -205,7 +205,7 @@ export const products = [
   {
     id: 'decorative-panels',
     name: 'Decorative Panels',
-    blueprint: 'panels',
+
     images: [dp1, dp2, dp3, dp4, dp5, dp6, dp7, dp8, dp9, dp10, dp11],
     shortDescription: 'Statement panels for walls, ceilings, gates and dividers.',
     description:
@@ -225,7 +225,7 @@ export const products = [
   {
     id: 'name-plates',
     name: 'Name Plates',
-    blueprint: 'nameplate',
+
     images: [nameplate1, nameplate2, nameplate3, nameplate4, nameplate5],
     shortDescription: 'Engraved metal name plates for homes and offices.',
     description:

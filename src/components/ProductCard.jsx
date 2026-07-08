@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
-import ProductBlueprint from './ProductBlueprint'
+
 import styles from './ProductCard.module.css'
 
 export default function ProductCard({ product }) {
@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
         {thumbnail ? (
           <img src={thumbnail} alt={product.name} className={styles.image} />
         ) : (
-          <ProductBlueprint type={product.blueprint} className={styles.image} />
+          <div className={styles.image} style={{ backgroundColor: '#f3f4f6', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9ca3af', fontSize: '14px' }}>No Image</div>
         )}
       </div>
       <div className={styles.body}>

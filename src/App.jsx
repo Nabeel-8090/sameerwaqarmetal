@@ -9,6 +9,9 @@ import ProductDetails from './pages/ProductDetails';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
+import ProtectedRoute from './components/ProtectedRoute';
 
 export default function App() {
   const location = useLocation();
@@ -22,8 +25,9 @@ export default function App() {
   ];
 
   const isProductDetails = location.pathname.startsWith('/products/');
+  const isAdmin = location.pathname.startsWith('/admin');
   const showLayout =
-    validRoutes.includes(location.pathname) || isProductDetails;
+    (validRoutes.includes(location.pathname) || isProductDetails) && !isAdmin;
 
   return (
     <>
@@ -39,6 +43,9 @@ export default function App() {
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
+          <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

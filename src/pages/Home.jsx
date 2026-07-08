@@ -12,7 +12,6 @@ import {
 import { products } from '../data/products'
 import { buildGeneralWhatsAppUrl } from '../data/siteConfig'
 import ProductCard from '../components/ProductCard'
-import ProductBlueprint from '../components/ProductBlueprint'
 import styles from './Home.module.css'
 
 const whyChooseUs = [
