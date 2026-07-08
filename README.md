@@ -1,6 +1,6 @@
-# Sameer Waqar Metal Creation
+# METALEDGE Metal Creation
 
-A premium, responsive website for **Sameer Waqar Metal Creation** — a custom metal fabrication workshop. Built with a clean, minimal, industrial design language (black & white theme) and direct WhatsApp ordering for customers.
+A premium, responsive website for **METALEDGE Metal Creation** — a custom metal fabrication workshop. Built with a clean, minimal, industrial design language (black & white theme) and direct WhatsApp ordering for customers.
 
 **Live Site:** https://sameerwaqarmetal.vercel.app/
 

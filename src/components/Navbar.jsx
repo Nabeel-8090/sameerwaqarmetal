@@ -33,11 +33,10 @@ export default function Navbar() {
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.brand}>
-          <img src={logo} alt="Sameer Waqar Metal Creation logo" className={styles.logo} />
+          <img src={logo} alt="METALEDGE Metal Creation logo" className={styles.logo} />
           <span className={styles.brandText}>
             <span className={styles.brandName}>
-              <span className={styles.brandWord}>SAMEER</span>
-              <span className={styles.brandWord}>WAQAR</span>
+              <span className={styles.brandWord}>METALEDGE</span>
             </span>
             <span className={styles.brandSlogan}>Metal Creation</span>
           </span>

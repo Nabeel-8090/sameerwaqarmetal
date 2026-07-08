@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: 'Sameer Waqar Metal Creation',
-  shortName: 'Sameer Waqar',
+  name: 'METALEDGE Metal Creation',
+  shortName: 'METALEDGE',
   slogan: 'Metal Creation',
   tagline: 'Premium Custom Metal Creations Crafted with Precision',
 
@@ -50,7 +50,7 @@ export function buildWhatsAppUrl({ productName, productUrl } = {}) {
 
 export function buildGeneralWhatsAppUrl() {
   const message = encodeURIComponent(
-    'Hello, I would like to know more about Sameer Waqar Metal Creation and your products.'
+    'Hello, I would like to know more about METALEDGE Metal Creation and your products.'
   )
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${message}`
 }

@@ -11,9 +11,9 @@ export default function Footer() {
       <div className={`container ${styles.grid}`}>
         <div className={styles.brandCol}>
           <Link to="/" className={styles.brand}>
-            <img src="/favicon.png" alt="Sameer Waqar Metal Creation logo" className={styles.logo} />
+            <img src="/favicon.png" alt="METALEDGE Metal Creation logo" className={styles.logo} />
             <span>
-              <span className={styles.brandName}>SAMEER WAQAR</span>
+              <span className={styles.brandName}>METALEDGE</span>
               <span className={styles.brandSlogan}>Metal Creation</span>
             </span>
           </Link>

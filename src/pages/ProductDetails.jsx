@@ -13,7 +13,7 @@ export default function ProductDetails() {
   const [activeIndex, setActiveIndex] = useState(0)
 
   useEffect(() => {
-    if (product) document.title = `${product.name} | Sameer Waqar Metal Creation`
+    if (product) document.title = `${product.name} | METALEDGE Metal Creation`
   }, [product])
 
   useEffect(() => {

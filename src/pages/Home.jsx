@@ -36,7 +36,7 @@ export default function Home() {
             Premium Custom Metal Creations, Crafted with Precision
           </h1>
           <p className={styles.heroText}>
-            SAMEER WAQAR METAL CREATION designs and manufactures high-quality custom metal products with precision and craftsmanship. From decorative pieces to functional metal creations, every product is built to order with attention to quality, durability, and detail.
+            METALEDGE METAL CREATION designs and manufactures high-quality custom metal products with precision and craftsmanship. From decorative pieces to functional metal creations, every product is built to order with attention to quality, durability, and detail.
           </p>
           <div className={styles.heroActions}>
             <Link to="/products" className="btn btn-primary">

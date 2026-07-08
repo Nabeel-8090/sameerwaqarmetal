@@ -86,7 +86,7 @@ export default function Contact() {
         <div className={styles.mapCol}>
           <div className={styles.mapFrame}>
             <iframe
-              title="Sameer Waqar Metal Creation location"
+              title="METALEDGE Metal Creation location"
               src={siteConfig.mapEmbedSrc}
               width="100%"
               height="100%"

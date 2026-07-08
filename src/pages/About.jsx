@@ -43,7 +43,7 @@ export default function About() {
           <span className="eyebrow">About the Workshop</span>
           <h1 className={styles.title}>Craft, precision, and a workshop that stands behind its work</h1>
           <p className={styles.lead}>
-            Sameer Waqar Metal Creation manufactures custom metal fabrication and decorative
+            METALEDGE Metal Creation manufactures custom metal fabrication and decorative
             products with precision workmanship, durable materials and close attention to
             detail. From a single name plate to full architectural installations, every order
             passes through the same disciplined process — and every customer gets a workshop
