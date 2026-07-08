@@ -2,7 +2,7 @@
 
 A premium, responsive website for **METALEDGE Metal Creation** — a custom metal fabrication workshop. Built with a clean, minimal, industrial design language (black & white theme) and direct WhatsApp ordering for customers.
 
-**Live Site:** https://sameerwaqarmetal.vercel.app/
+**Live Site:** https://metaledge.vercel.app/
 
 > This is **Version 1**. Product data is currently managed through code. A future version will add a backend, Cloudinary-based image management, and a protected admin dashboard so the client can manage the catalogue without touching code — WhatsApp will remain the primary ordering channel.
 
@@ -27,8 +27,8 @@ A premium, responsive website for **METALEDGE Metal Creation** — a custom meta
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/Nabeel-8090/sameerwaqarmetal.git
-cd sameerwaqarmetal
+git clone https://github.com/Nabeel-8090/metaledge.git
+cd metaledge
 npm install
 ```
 
